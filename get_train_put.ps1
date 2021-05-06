@@ -7,6 +7,8 @@ param (
     [switch]$force_train
 )
 
+$ErrorActionPreference = "Stop" # Stop script if a single line fails
+
 if (!(Test-Path "data/tub_$tub_id*") -or $force_all -or $force_copy) {
     scp -r ("pi@$ip"+":/home/pi/mycar/data/tub_$tub_id*") "data/"
 }
