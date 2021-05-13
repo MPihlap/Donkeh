@@ -21,10 +21,13 @@ Luua fail nimega `/etc/update-motd.d/20-aliases` järgmise sisuga:
 ```
 #!/bin/sh
 echo ""
+echo ""
+echo "=================================================================================================="
 echo "Kasutatavad aliased:"
 echo "c - logi teise donkeysse sisse"
 echo "j - juhi donkey-t Meelise puldi abil"
 echo "donkeyoff - lülita donkeycar välja (Vähemalt raspi osa. Kui tuju on hea paneb see ka gaasi põhja.)"
-```
+echo "=================================================================================================="
+echo ""```
 
 Teha `sudo chmod +x /etc/update-motd.d/20-aliases` ka sellele!
